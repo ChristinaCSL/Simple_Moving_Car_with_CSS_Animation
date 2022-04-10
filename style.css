@@ -1,0 +1,37 @@
+/* <a href="https://www.freepik.com/free-vector/city-at-night-and-day-illustration_829621.htm">Designed by Freepik</a> */
+
+/* https://www.freepik.com/free-vector/city-at-night-and-day-illustration_829621.htm */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  /* height: 120vh; */
+  height: 130vh;
+  background: url(town.jpg);
+  background-position: bottom left;
+  margin-top: 0px;
+  background-position: left;
+  animation: driving 35s linear infinite;
+}
+
+.suv {
+  position: absolute;
+  left: 10px;
+  bottom: -10px;
+  width: 500px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+@keyframes driving {
+  from {
+    background-position: bottom left;
+  }
+
+  to {
+    background-position: bottom right;
+  }
+}
